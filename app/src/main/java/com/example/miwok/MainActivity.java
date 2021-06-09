@@ -15,16 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NumberAcivity clickListner = new NumberAcivity();
+
         TextView numbers =(TextView)findViewById(R.id.Number);
-        numbers.setOnClickListener(clickListner);
+        numbers.setOnClickListener(new NumberAcivity(););
 
     }
-    /*public void numberView(View view){
-        Intent i = new Intent (this , NumberAcivity.class);
-        startActivity(i);
 
-    }*/
     public void familyView(View view){
         Intent i =new Intent(this,FamilyActivity.class);
         startActivity(i);

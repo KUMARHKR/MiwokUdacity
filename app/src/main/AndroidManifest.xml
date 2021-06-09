@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miwok">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mr_kumar_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mr_kumar_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Miwok">
+        <activity android:name=".ColorsActivity"></activity>
+        <activity android:name=".PhrasasActivity" />
+        <activity android:name=".FamilyActivity" />
+        <activity android:name=".NumberAcivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
